@@ -1,0 +1,8 @@
+<h1 class="title is-2">All Customers</h1>
+<div class="box">
+  <h2 class="title is-4"><%= customer.name %></h2>
+  <%= link_to image_tag(customer.image, alt: customer.name, size:"400x300")  %>
+  <p class="block"><strong>Province:</strong></p>
+  <p class="block"><%= customer.phone_number %></p>
+  <p class="block"><%= customer.email %></p>
+</div>
