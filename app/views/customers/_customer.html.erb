@@ -1,0 +1,23 @@
+<div class="column" style="border: solid grey 1px; margin: 10px; border-radius: 5px; padding: 5px">
+  <h2 class="title is-4"><%= customer.full_name %></h2>
+  <% if customer.image.present? %>
+    <figure class="image is-4by3">
+      <%= image_tag(customer.image, alt: customer.full_name, size:"210x300") %>
+    </figure>
+  <% end %>
+  <p><strong>Province:</strong><%= customer.notes %></p>
+  <p><%= customer.phone_number %></p>
+  <% if customer.email.present? %>
+  <p><%= customer.email %></p>
+  <% else %>
+  <p><br></p>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
